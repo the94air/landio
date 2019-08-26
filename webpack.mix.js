@@ -1,4 +1,8 @@
 let mix = require('laravel-mix');
+let tailwindcss = require('tailwindcss');
+let glob = require('glob-all');
+
+require('laravel-mix-purgecss');
 
 /*
  |--------------------------------------------------------------------------
@@ -15,7 +19,20 @@ mix.setPublicPath('docs')
     .setResourceRoot('http://landio.test/')
     .js('src/javascript/app.js', 'docs/javascript')
     .sass('src/sass/app.scss', 'docs/css')
+    .copyDirectory('src/images', 'docs/images')
     .copyDirectory('src/icons', 'docs/icons')
+    .options({
+        processCssUrls: false,
+        postCss: [ tailwindcss('./tailwind.config.js') ],
+    })
+    .purgeCss({
+        folders: ['docs'],
+        extensions: ['html'],
+        paths: () => glob.sync([
+            path.join(__dirname, 'docs/**/*.html'),
+        ]),
+    })
+
 
 // Full API
 // mix.js(src, output);
