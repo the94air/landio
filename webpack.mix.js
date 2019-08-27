@@ -31,6 +31,7 @@ mix.setPublicPath('docs')
         paths: () => glob.sync([
             path.join(__dirname, 'docs/**/*.html'),
         ]),
+        whitelist: ['show','select']
     })
 
 
