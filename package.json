@@ -28,6 +28,7 @@
     "vue-template-compiler": "^2.5.22"
   },
   "dependencies": {
+    "nprogress": "^0.2.0",
     "tailwindcss": "^1.1.2"
   }
 }

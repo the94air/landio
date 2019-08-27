@@ -26,7 +26,7 @@
 
 	<link rel="stylesheet" type="text/css" href="css/app.css">
 </head>
-<body>
+<body class="mt-12">
 
 	<div class="hidden bg-orange-300 border border-orange-400 py-1" id="cookies-notify">
 		<div class="container">
@@ -37,11 +37,11 @@
 		</div>
 	</div>
 
-	<nav class="bg-orange-100 border-b border-orange-200">
+	<nav class="fixed inset-x-0 top-0  bg-orange-100 border-b border-orange-200">
 		<div class="container">
 			<div class="flex justify-between items-center flex-wrap">
 				<div>
-					<a href="/" class="block no-underline py-3">
+					<a href="#" class="block no-underline py-3">
 						<div class="flex items-center">
 							<img src="images/logo.png" class="mr-2 w-20" alt="Landio">
 							<p class="font-bold font-title text-2xl">Landio</p>
@@ -56,16 +56,16 @@
 				<div class="navbar-menu hidden md:block w-full md:w-auto mb-5 md:mb-0" id="navbar-menu">
 					<ul class="flex flex-col md:flex-row">
 						<li class="relative py-0 md:py-5 mr-0 md:mr-5">
-							<a href="#" class="block md:inline w-full md:w-auto px-3 py-3 md:px-0 md:py-5 no-underline hover:opacity-75 select">Advantage</a>
+							<a href="#advantage" class="block md:inline w-full md:w-auto px-3 py-3 md:px-0 md:py-5 no-underline hover:opacity-75">Advantage</a>
 						</li>
 						<li class="relative py-0 md:py-5 mr-0 md:mr-5">
-							<a href="#" class="block md:inline w-full md:w-auto px-3 py-3 md:px-0 md:py-5 no-underline hover:opacity-75">Tips</a>
+							<a href="#tips" class="block md:inline w-full md:w-auto px-3 py-3 md:px-0 md:py-5 no-underline hover:opacity-75">Tips</a>
 						</li>
 						<li class="relative py-0 md:py-5 mr-0 md:mr-5">
-							<a href="#" class="block md:inline w-full md:w-auto px-3 py-3 md:px-0 md:py-5 no-underline hover:opacity-75">Resources</a>
+							<a href="#connect" class="block md:inline w-full md:w-auto px-3 py-3 md:px-0 md:py-5 no-underline hover:opacity-75">Connect</a>
 						</li>
 						<li class="relative py-0 md:py-5">
-							<a href="#" class="block md:inline w-full md:w-auto px-3 py-3 md:px-0 md:py-5 no-underline hover:opacity-75">Connect</a>
+							<a href="#resources" class="block md:inline w-full md:w-auto px-3 py-3 md:px-0 md:py-5 no-underline hover:opacity-75">Resources</a>
 						</li>
 					</ul>
 				</div>
@@ -73,18 +73,18 @@
 		</div>
 	</nav>
 
-	<header class="py-24">
+	<header class="pt-24 pb-18">
 		<div class="container">
 			<div class="flex flex-wrap items-center -mx-2">
 				<div class="w-full md:w-1/2 px-2 mb-12 md:mb-0">
 					<p class="text-gray-600 font-bold text-sm uppercase tracking-widest mb-4">Just like a feather</p>
-					<h1 class="uppercase mb-2 text-3xl md:text-4xl">The lightweight landing page with tailwindcss</h1>
+					<h1 class="mb-2 text-3xl md:text-4xl">The lightweight landing page with tailwindcss</h1>
 					<p class="text-xl mb-4">Focus on what's matters, and that means your <b>content</b></p>
 					<div class="mb-4">
-						<a href="#" class="inline-block text-center rounded align-middle whitespace-no-wrap leading-tight cursor-pointer no-underline bg-orange-300 border border-orange-400 select-none px-6 py-3 text-lg font-bold uppercase focus:outline-none hover:opacity-75 focus:shadow-outline mr-2">GitHub</a>
-						<a href="#" class="inline-block text-center rounded align-middle whitespace-no-wrap leading-tight cursor-pointer no-underline bg-orange-300 border border-orange-400 select-none px-6 py-3 text-lg font-bold uppercase focus:outline-none hover:opacity-75 focus:shadow-outline">Download</a>
+						<a target="_blank" href="https://github.com/the94air/landio" class="inline-block text-center rounded align-middle whitespace-no-wrap leading-tight cursor-pointer no-underline bg-orange-300 border border-orange-400 select-none px-6 py-3 text-lg font-bold uppercase focus:outline-none hover:opacity-75 focus:shadow-outline mr-2">GitHub</a>
+						<a target="_blank" href="https://github.com/the94air/landio" class="inline-block text-center rounded align-middle whitespace-no-wrap leading-tight cursor-pointer no-underline bg-orange-300 border border-orange-400 select-none px-6 py-3 text-lg font-bold uppercase focus:outline-none hover:opacity-75 focus:shadow-outline">Download</a>
 					</div>
-					<p class="text-xs"><b>664 KiB</b> in size and <b>7.69 KiB</b> minfied and CSS purged</p>
+					<p class="text-xs"><b>7.69 KiB</b> minfied and CSS purged</p>
 				</div>
 				<div class="w-full md:w-1/2 px-2">
 					<div class="flex flex-wrap">
@@ -93,7 +93,7 @@
 							<iframe class="hidden md:block ml-auto" width="560" height="315" src="https://www.youtube.com/embed/Zwyo4XWWgnQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						</div>
 						<div class="w-full">
-							<p class="text-right text-xs font-bold uppercase italic tracking-widest"><span class="text-gray-600">video by</span> <a href="#">Andre Madarang</a></p>
+							<p class="text-right text-xs font-bold uppercase italic tracking-widest"><span class="text-gray-600">video by</span> <a target="_blank" href="https://www.youtube.com/channel/UCtb40EQj2inp8zuaQlLx3iQ">Andre Madarang</a></p>
 						</div>
 					</div>
 				</div>
@@ -101,170 +101,174 @@
 		</div>
 	</header>
 
-	<section class="circles py-12">
-		<div class="container">
-			<div class="text-center">
-				<p class="text-gray-600 font-bold text-sm uppercase tracking-widest mb-4">Why is this even usefull?</p>
-				<h2 class="mb-16">Advantage</h2>
-			</div>
-			<div class="flex flex-wrap -mx-4">
-				<div class="w-full md:w-1/3 px-4 mb-12 md:mb-0">
-					<img class="w-32 mx-auto mb-4" src="images/circle.png" alt="title here">
-					<h3 class="text-xl text-center italic mb-2">Faster browsing</h3>
-					<p class="leading-relaxed text-center">Make us of Tailwindcss and purgecss power in keeping your styles small and tiny.</p>
-				</div>
-				<div class="w-full md:w-1/3 px-4 mb-12 md:mb-0">
-					<img class="w-32 mx-auto mb-4" src="images/circle.png" alt="title here">
-					<h3 class="text-xl text-center italic mb-2">Make everyone happy</h3>
-					<p class="leading-relaxed text-center">Don't leave your visitor struggle and have some manners because this really matters.</p>
-				</div>
-				<div class="w-full md:w-1/3 px-4">
-					<img class="w-32 mx-auto mb-4" src="images/circle.png" alt="title here">
-					<h3 class="text-xl text-center italic mb-2">For your SEO</h3>
-					<p class="leading-relaxed text-center">Safe yourself from the 3 seconds loading time -bottle neck- and boost your search rank.</p>
-				</div>
-			</div>
-		</div>
-	</section>
+	<main>
 
-	<section class="tips py-12">
-		<div class="container">
-			<div class="text-center">
-				<p class="text-gray-600 font-bold text-sm uppercase tracking-widest mb-4">Just the beginning</p>
-				<h2 class="mb-16">Tips</h2>
-			</div>
-
-			<div class="flex flex-wrap items-center -mx-2 mb-16">
-				<div class="w-full md:w-1/2 px-2 mb-12 md:mb-0">
-					<img class="w-full" src="images/triangle.png" alt="some title">
+		<section id="advantage" class="pt-20 pb-12 circles">
+			<div class="container">
+				<div class="text-center">
+					<p class="text-gray-600 font-bold text-sm uppercase tracking-widest mb-4">Why is this even usefull?</p>
+					<h2 class="mb-16">Advantage</h2>
 				</div>
-				<div class="w-full md:w-1/2 px-2">
-					<p class="text-gray-600 font-bold text-sm uppercase tracking-widest mb-4">Define the look of your website</p>
-					<h3>The font is carrying all the beauty</h3>
-					<p class="text-lg leading-relaxed mb-3">The fonts are one of the most important ingredients of your website as a whole. There are a lot of choices to make your site a piece of art. You can search for fonts on Adobe fonts and Google fonts.</p>
-					<a href="#" class="uppercase font-bold italic">Learn more</a>
-				</div>
-			</div>
-
-			<div class="flex flex-wrap items-center -mx-2 mb-16">
-				<div class="w-full md:w-1/2 px-2 mb-12 md:mb-0">
-					<p class="text-gray-600 font-bold text-sm uppercase tracking-widest mb-4">Pictures are a most</p>
-					<h3>It's not just about the CSS</h3>
-					<p class="text-lg leading-relaxed mb-3">Images are a big side of the problem and require close attention because of how much time it takes to load in the browser. CDN and minification is a good option in this case.</p>
-					<a href="#" class="uppercase font-bold italic">Learn more</a>
-				</div>
-				<div class="w-full md:w-1/2 px-2">
-					<img class="w-full ml-auto" src="images/triangle.png" alt="some title">
-				</div>
-			</div>
-
-			<div class="flex flex-wrap items-center -mx-2">
-				<div class="w-full md:w-1/2 px-2 mb-12 md:mb-0">
-					<img class="w-full" src="images/triangle.png" alt="some title">
-				</div>
-				<div class="w-full md:w-1/2 px-2">
-					<p class="text-gray-600 font-bold text-sm uppercase tracking-widest mb-4">Javascript bundling is the secret</p>
-					<h3>It just needs care from our side</h3>
-					<p class="text-lg leading-relaxed mb-3">You need to write a healthy JavaScript. You can use a JavaScript framework or jQuery with bundlers like Webpack or Parcel to help you support all modern browsers and to minify them to the smallest size.</p>
-					<a href="#" class="uppercase font-bold italic">Learn more</a>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="connect py-12">
-		<div class="container">
-			<div class="text-center">
-				<p class="text-gray-600 font-bold text-sm uppercase tracking-widest mb-4">Get to know more</p>
-				<h2 class="mb-16">Connect</h2>
-			</div>
-			<div class="w-full md:w-10/12 mx-auto">
-				<div class="flex flex-wrap items-start -mx-4">
-					<div class="w-full md:w-2/3 px-4 mb-12 md:mb-0">
-						<h3 class="mb-12">Join our newsletter</h3>
-						<p class="mb-4">Sign up to receive an email whenever we collect more resources to share with you</p>
-						<div class="flex flex-wrap md:flex-no-wrap mb-2">
-							<input class="mb-4 md:mb-0 font-text block w-full px-4 py-4 leading-tight border md:border-r-0 border-gray-400 rounded md:rounded-r-none focus:outline-none focus:shadow-outline" type="email" placeholder="Fill in your email" style="padding-top: 1.1rem;padding-bottom: 1.1rem">
-							<button class="inline-block text-center rounded md:rounded-l-none align-middle whitespace-no-wrap leading-tight cursor-pointer no-underline bg-orange-300 border border-orange-400 select-none px-8 py-4 text-lg font-bold uppercase focus:outline-none hover:opacity-75 focus:shadow-outline">Subscribe</button>
-						</div>
-						<p class="text-sm"><small>No spam. We promise.</small></p>
+				<div class="flex flex-wrap -mx-4">
+					<div class="w-full md:w-1/3 px-4 mb-12 md:mb-0">
+						<img class="w-32 mx-auto mb-4" src="images/circle.png" alt="title here">
+						<h3 class="text-xl text-center italic mb-2">Faster browsing</h3>
+						<p class="leading-relaxed text-center">Make us of Tailwindcss and purgecss power in keeping your styles small and tiny.</p>
+					</div>
+					<div class="w-full md:w-1/3 px-4 mb-12 md:mb-0">
+						<img class="w-32 mx-auto mb-4" src="images/circle.png" alt="title here">
+						<h3 class="text-xl text-center italic mb-2">Make everyone happy</h3>
+						<p class="leading-relaxed text-center">Don't leave your visitor struggle and have some manners because this really matters.</p>
 					</div>
 					<div class="w-full md:w-1/3 px-4">
-						<h3>Project by</h3>
-						<img class="h-32 rounded-full mb-2" src="images/author.png" alt="Abdalla Arbab">
-						<p class="text-2xl">Abdalla Arbab</p>
-						<p class="text-gray-600 font-bold text-sm uppercase tracking-widest mb-2">Web developer and designer</p>
-						<div class="flex">
-							<a href="#">
-								<span class="block w-8 mr-4">
-									<svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
-								</span>
-							</a>
-							<a href="#">
-								<span class="block w-8 text-blue-500">
-									<svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
-								</span>
-							</a>
+						<img class="w-32 mx-auto mb-4" src="images/circle.png" alt="title here">
+						<h3 class="text-xl text-center italic mb-2">For your SEO</h3>
+						<p class="leading-relaxed text-center">Safe yourself from the 3 seconds loading time -bottle neck- and boost your search rank.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	
+		<section id="tips" class="pt-20 pb-12 tips">
+			<div class="container">
+				<div class="text-center">
+					<p class="text-gray-600 font-bold text-sm uppercase tracking-widest mb-4">Just the beginning</p>
+					<h2 class="mb-16">Tips</h2>
+				</div>
+	
+				<div class="flex flex-wrap items-center -mx-2 mb-16">
+					<div class="w-full md:w-1/2 px-2 mb-12 md:mb-0">
+						<img class="w-full" src="images/triangle.png" alt="some title">
+					</div>
+					<div class="w-full md:w-1/2 px-2">
+						<p class="text-gray-600 font-bold text-sm uppercase tracking-widest mb-4">Define the look of your website</p>
+						<h3>The font is carrying all the beauty</h3>
+						<p class="text-lg leading-relaxed mb-3">The fonts are one of the most important ingredients of your website as a whole. There are a lot of choices to make your site a piece of art. You can search for fonts on Fontwolf.</p>
+						<a target="_blank" href="http://fontwolf.com" class="uppercase font-bold italic">Learn more</a>
+					</div>
+				</div>
+	
+				<div class="flex flex-wrap items-center -mx-2 mb-16">
+					<div class="w-full md:w-1/2 px-2 mb-12 md:mb-0">
+						<p class="text-gray-600 font-bold text-sm uppercase tracking-widest mb-4">Pictures are a most</p>
+						<h3>It's not just about the CSS</h3>
+						<p class="text-lg leading-relaxed mb-3">Images are a big side of the problem and require close attention because of how much time it takes to load in the browser. A CDN like Cloudinary is a good option in this case.</p>
+						<a target="_blank" href="https://cloudinary.com" class="uppercase font-bold italic">Learn more</a>
+					</div>
+					<div class="w-full md:w-1/2 px-2">
+						<img class="w-full ml-auto" src="images/triangle.png" alt="some title">
+					</div>
+				</div>
+	
+				<div class="flex flex-wrap items-center -mx-2">
+					<div class="w-full md:w-1/2 px-2 mb-12 md:mb-0">
+						<img class="w-full" src="images/triangle.png" alt="some title">
+					</div>
+					<div class="w-full md:w-1/2 px-2">
+						<p class="text-gray-600 font-bold text-sm uppercase tracking-widest mb-4">Javascript bundling is the secret</p>
+						<h3>It just needs care from our side</h3>
+						<p class="text-lg leading-relaxed mb-3">You need to write a healthy JavaScript. You can use a JavaScript framework or jQuery with bundlers like Webpack or Parcel to help you support all modern browsers and to minify them to the smallest size.</p>
+						<a target="_blank" href="https://webpack.js.org" class="uppercase font-bold italic">Learn more</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	
+		<section id="connect" class="pt-20 pb-12 connect">
+			<div class="container">
+				<div class="text-center">
+					<p class="text-gray-600 font-bold text-sm uppercase tracking-widest mb-4">Get to know more</p>
+					<h2 class="mb-16">Connect</h2>
+				</div>
+				<div class="w-full md:w-10/12 mx-auto">
+					<div class="flex flex-wrap items-start -mx-4">
+						<div class="w-full md:w-2/3 px-4 mb-12 md:mb-0">
+							<h3 class="mb-12">Join our newsletter</h3>
+							<p class="mb-4">Sign up to receive an email whenever we collect more resources to share with you</p>
+							<div class="flex flex-wrap md:flex-no-wrap mb-2">
+								<input class="mb-4 md:mb-0 font-text block w-full px-4 py-4 leading-tight border md:border-r-0 border-gray-400 rounded md:rounded-r-none focus:outline-none focus:shadow-outline" type="email" placeholder="Fill in your email" style="padding-top: 1.1rem;padding-bottom: 1.1rem">
+								<button class="inline-block text-center rounded md:rounded-l-none align-middle whitespace-no-wrap leading-tight cursor-pointer no-underline bg-orange-300 border border-orange-400 select-none px-8 py-4 text-lg font-bold uppercase focus:outline-none hover:opacity-75 focus:shadow-outline">Subscribe</button>
+							</div>
+							<p class="text-sm"><small>No spam. We promise.</small></p>
+						</div>
+						<div class="w-full md:w-1/3 px-4">
+							<h3>Project by</h3>
+							<img class="h-32 rounded-full mb-2" src="images/author.png" alt="Abdalla Arbab">
+							<p class="text-2xl">Abdalla Arbab</p>
+							<p class="text-gray-600 font-bold text-sm uppercase tracking-widest mb-2">Web developer and designer</p>
+							<div class="flex">
+								<a class="mr-4" target="_blank" href="https://github.com/the94air">
+									<span class="block w-8">
+										<svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="text-black svg-inline--fa fa-github fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+									</span>
+								</a>
+								<a target="_blank" href="https://twitter.com/abdalla__arbab">
+									<span class="block w-8 text-blue-500">
+										<svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+									</span>
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
+	
+		<section id="resources" class="pt-20 pb-8 resources">
+			<div class="container">
+				<div class="text-center">
+					<p class="text-gray-600 font-bold text-sm uppercase tracking-widest mb-4">A bit of help</p>
+					<h2 class="mb-16">Resources</h2>
+				</div>
+				<div class="flex flex-wrap -mx-1">
+					<div class="w-full md:w-1/4 px-1 mb-8">
+						<a class="no-underline" target="_blank" href="https://www.awwwards.com/how-to-design-your-site-to-make-it-super-fast.html">
+							<div class="block bg-orange-300 border border-orange-400 px-4 py-8 rounded">
+								<h3 class="text-2xl h-auto lg:h-48 font-normal">How to Design Your Site to Make it Super-fast</h3>
+								<p class="italic text-xs">By <span class="uppercase font-bold">Marc Schenker</span></p>
+								<p class="underline italic text-xs">awwwards.com</p>
+							</div>
+						</a>
+					</div>
+					<div class="w-full md:w-1/4 px-1 mb-8">
+						<a class="no-underline" target="_blank" href="https://css-tricks.com/understanding-web-fonts-getting/">
+							<div class="block bg-orange-300 border border-orange-400 px-4 py-8 rounded">
+								<h3 class="text-2xl h-auto lg:h-48 font-normal">Understanding Web Fonts and Getting the Most Out of Them</h3>
+								<p class="italic text-xs">By <span class="uppercase font-bold">Thierry Blancpain</span></p>
+								<p class="underline italic text-xs">css-tricks.com</p>
+							</div>
+						</a>
+					</div>
+					<div class="w-full md:w-1/4 px-1 mb-8">
+						<a class="no-underline" target="_blank" href="https://adamwathan.me/journal/2019/01/11/new-website-and-tailwind-performance-hell/">
+							<div class="block bg-orange-300 border border-orange-400 px-4 py-8 rounded">
+								<h3 class="text-2xl h-auto lg:h-48 font-normal">New Website and Tailwind Performance Hell</h3>
+								<p class="italic text-xs">By <span class="uppercase font-bold">Adam Wathan</span></p>
+								<p class="underline italic text-xs">adamwathan.me</p>
+							</div>
+						</a>
+					</div>
+					<div class="w-full md:w-1/4 px-1 mb-8">
+						<a class="no-underline" target="_blank" href="https://www.freecodecamp.org/news/how-i-dropped-250kb-of-dead-css-weight-with-purgecss-28821049fb/">
+							<div class="block bg-orange-300 border border-orange-400 px-4 py-8 rounded">
+								<h3 class="text-2xl h-auto lg:h-48 font-normal">How I Dropped 250KB of Dead CSS Weight with PurgeCSS</h3>
+								<p class="italic text-xs">By <span class="uppercase font-bold">Sarah Dayan</span></p>
+								<p class="underline italic text-xs">freecodecamp.org</p>
+							</div>
+						</a>
+					</div>
+					<div class="w-full md:w-1/4 px-1">
+						<div class="opacity-25 select-none block bg-orange-100 border border-dashed border-orange-400 px-4 py-8 rounded">
+							<div class="flex items-center lg:h-48">
+								<h3 class="block w-full text-center text-2xl font-normal">More comming soon</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-	<section class="resources py-12">
-		<div class="container">
-			<div class="text-center">
-				<p class="text-gray-600 font-bold text-sm uppercase tracking-widest mb-4">A bit of help</p>
-				<h2 class="mb-16">Resources</h2>
-			</div>
-			<div class="flex flex-wrap -mx-1">
-				<div class="w-full md:w-1/4 px-1 mb-8">
-					<a class="no-underline" target="_blank" href="https://www.awwwards.com/how-to-design-your-site-to-make-it-super-fast.html">
-						<div class="block bg-orange-300 border border-orange-400 px-4 py-8 rounded">
-							<h3 class="text-2xl h-auto lg:h-48">How to Design Your Site to Make it Super-fast</h3>
-							<p class="italic text-xs">By <span class="uppercase font-bold">Marc Schenker</span></p>
-							<p class="underline italic text-xs">awwwards.com</p>
-						</div>
-					</a>
-				</div>
-				<div class="w-full md:w-1/4 px-1 mb-8">
-					<a class="no-underline" target="_blank" href="https://css-tricks.com/understanding-web-fonts-getting/">
-						<div class="block bg-orange-300 border border-orange-400 px-4 py-8 rounded">
-							<h3 class="text-2xl h-auto lg:h-48">Understanding Web Fonts and Getting the Most Out of Them</h3>
-							<p class="italic text-xs">By <span class="uppercase font-bold">Thierry Blancpain</span></p>
-							<p class="underline italic text-xs">css-tricks.com</p>
-						</div>
-					</a>
-				</div>
-				<div class="w-full md:w-1/4 px-1 mb-8">
-					<a class="no-underline" target="_blank" href="https://adamwathan.me/journal/2019/01/11/new-website-and-tailwind-performance-hell/">
-						<div class="block bg-orange-300 border border-orange-400 px-4 py-8 rounded">
-							<h3 class="text-2xl h-auto lg:h-48">New Website and Tailwind Performance Hell</h3>
-							<p class="italic text-xs">By <span class="uppercase font-bold">Adam Wathan</span></p>
-							<p class="underline italic text-xs">adamwathan.me</p>
-						</div>
-					</a>
-				</div>
-				<div class="w-full md:w-1/4 px-1 mb-8">
-					<a class="no-underline" target="_blank" href="https://www.freecodecamp.org/news/how-i-dropped-250kb-of-dead-css-weight-with-purgecss-28821049fb/">
-						<div class="block bg-orange-300 border border-orange-400 px-4 py-8 rounded">
-							<h3 class="text-2xl h-auto lg:h-48">How I Dropped 250KB of Dead CSS Weight with PurgeCSS</h3>
-							<p class="italic text-xs">By <span class="uppercase font-bold">Sarah Dayan</span></p>
-							<p class="underline italic text-xs">freecodecamp.org</p>
-						</div>
-					</a>
-				</div>
-				<div class="w-full md:w-1/4 px-1">
-					<div class="opacity-25 select-none block bg-orange-100 border border-dashed border-orange-400 px-4 py-8 rounded">
-						<div class="flex items-center lg:h-48">
-							<h3 class="block w-full text-center text-2xl">More comming soon</h3>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+	</main>
 
 	<footer class="pt-16 pb-24 bg-orange-100 border-t border-orange-200">
 		<div class="container">
@@ -280,12 +284,12 @@
 				<div class="w-full md:w-1/3 px-2 mb-12 md:mb-0">
 					<h4 class="text-lg mb-4">Social</h4>
 					<div class="flex items-center">
-						<a href="#">
-							<span class="block w-6 mr-4">
+						<a class="mr-4" target="_blank" href="https://github.com/the94air">
+							<span class="block w-6">
 								<svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
 							</span>
 						</a>
-						<a href="#">
+						<a target="_blank" href="https://twitter.com/abdalla__arbab">
 							<span class="block w-6 text-blue-500">
 								<svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
 							</span>
@@ -294,11 +298,11 @@
 				</div>
 				<div class="w-full md:w-1/3 px-2">
 					<h4 class="text-lg mb-4">Links</h4>
-					<ul>
-						<li><a href="#" class="text-sm">Advantage</a></li>
-						<li><a href="#" class="text-sm">Tips</a></li>
-						<li><a href="#" class="text-sm">Resources</a></li>
-						<li><a href="#" class="text-sm">Connect</a></li>
+					<ul id="footer-menu">
+						<li><a href="#advantage" class="text-sm">Advantage</a></li>
+						<li><a href="#tips" class="text-sm">Tips</a></li>
+						<li><a href="#resources" class="text-sm">Resources</a></li>
+						<li><a href="#connect" class="text-sm">Connect</a></li>
 					</ul>
 				</div>
 			</div>

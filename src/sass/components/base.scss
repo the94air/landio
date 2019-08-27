@@ -87,12 +87,18 @@ hr {
         border-color: #fab659; 
     }
     @screen md {
+        ul li a {
+            &::after {
+                content: '';
+                @apply block absolute bottom-0 left-0 right-0 h-0 rounded-t-lg;
+                background: #fab659;
+                transition: height ease 150ms;
+            }
+        }
         ul li a.select {
             @apply border-none;
             &::after {
-                content: '';
-                @apply block absolute bottom-0 left-0 right-0 h-1 rounded-t-lg;
-                background: #fab659;
+                @apply h-1;
             }
         }
     }
